@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #4daf54, #3d8888);
+}
+
+.card {
+    margin: 120px auto;
+    width: 320px;
+    height: 400px;
+}
