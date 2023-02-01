@@ -24,12 +24,12 @@ input.addEventListener('keydown', function (event) {
     if (!tags.includes(input.value.trim()) && input.value.trim() != "") {
         if (event.key == 'Enter') {
             tags.push(input.value.trim());
-            input.value = '';
+            input.value = "";
             render();
             console.log(tags);
         }
     } else {
-        input.value = '';
+        input.value = "";
     }
 })
 btnRemoveAll.addEventListener('click', function () {

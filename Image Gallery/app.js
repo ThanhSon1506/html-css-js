@@ -22,14 +22,7 @@ function showGallery() {
     gallleryImg.src = images[currentIndex].src;
     galllery.classList.add('show');
 }
-// function loopGallery() {
-//     if (currentIndex < images.length - 1) {
-//         currentIndex++;
-//         showGallery();
-//     } else {
-//         currentIndex = 0;
-//     }
-// }
+
 images.forEach((item, index) => {
     item.addEventListener('click', function () {
         currentIndex = index;
