@@ -110,6 +110,7 @@ body {
     top: 7px;
     right: 0;
     cursor: pointer;
+    color: gray;
 }
 
 .hide {
