@@ -36,8 +36,6 @@ function convert_vi_to_en(str) {
 function changeWeatherUI(capitalSearch) {
     // var data = await getWeather(capitalSearch);
     axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${capitalSearch} &appid=ad4fab968b134033141452fc1b052dff`).then(res => {
-        console.log('mui gio', new Date((new Date().getTime()) + (res.data.timezone - 25200) * 1000));
-        console.log(res);
         if (res.status == 200) {
             content.classList.remove('hide');
             city.innerText = res.data.name;
@@ -61,7 +59,7 @@ function changeWeatherUI(capitalSearch) {
                 body.setAttribute('class', 'cold');
             }
         } else {
-            content.classList.add('hide')
+            content.classList.add('hide');
         }
     });
 }
