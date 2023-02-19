@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.tool {
+    background: rgb(117, 30, 239);
+    display: flex;
+    align-items: center;
+}
+
+.tool>* {
+    height: 30px;
+    width: 30px;
+    background: white;
+    margin: 5px;
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    color: gray;
+    border-radius: 5px;
+}
+
+#save {
+    margin-left: auto;
+}
+
+canvas {
+    position: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
