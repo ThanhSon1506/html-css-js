@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary-color: rgb(8, 189, 8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 100px auto;
+    border-radius: 30px;
+    padding: 20px 50px;
+    background: rgb(211, 251, 211);
+}
+
+.food-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 5px 25px;
+    margin: 10px 20px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: white;
+    border: var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.food {
+    height: 25%;
+    width: 23%;
+    margin: 10px 5px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+img:hover {
+    transition: 0.5s all;
+    transform: scale(1.8) rotate(90deg);
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/*
+    - Nodemy thuc chien sang tạo : width: 0% - 100%
+    - js setInterval(thay doi p.innerHTML +=)
+    - js setInterval(thay doi p.innerHTML = sub)
+    - animation blink{
+        0,100%{border-right:1px solid black}
+        0{border-right:1px solid transprent}
+    -   0%,100%{width:0}
+        90%{width:100%}
+    }
+ */
+:root {
+    --primary-color: #96ee1c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing-wrapper p {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 70px;
+    text-shadow: 0 0 100px var(--primary-color);
+    /* animation: typing 5s steps(30) infinite, blink 1s infinite; */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+
+    0%,
+    100% {
+        width: 0%;
+    }
+
+    80% {
+        width: 100%;
+    }
+
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-right: 10px solid var(--primary-color);
+    }
+
+    50% {
+        border-right: 10px solid transparent;
+    }
+}
